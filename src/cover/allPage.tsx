@@ -85,10 +85,11 @@ const useIntersectionObserver = (options = {}) => {
 
 // Cover Component (your existing component)
 const Cover = ({ openInvitation }: Props) => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const encodedName = urlParams.get("name");
-  console.log(encodedName);
-  const decodedName = encodedName ? decodeURIComponent(encodedName) : "";
+  const params = new URLSearchParams(window.location.search);
+  const rawName = params.get("name") || ""; // "randa+alfarisyi+&+Partner"
+  const name = rawName.replace(/\+/g, " ");
+
+  const decodedName = name ? name : "";
   return (
     <div className="min-h-screen min-w-screen max-w-[500px] h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#2c1810] via-[#44050083] to-[#ff003c38] text-gray-100 font-sans relative overflow-hidden">
       <div className="w-full animate-[fadeInScale_1.5s_ease-out_2s_both] opacity-0">
@@ -1592,15 +1593,15 @@ const GiftSection = () => {
 
   const bankAccounts = [
     {
-      bank: "BCA",
-      number: "1234567890",
-      name: "Randa Alfarisyi",
+      bank: "BRI",
+      number: "546201023764535",
+      name: "Rini Ramadani",
       logo: "🏦",
     },
     {
-      bank: "Mandiri",
-      number: "0987654321",
-      name: "Rini Ramadani",
+      bank: "BNI",
+      number: "460714793",
+      name: "Randa Alfarisyi",
       logo: "🏦",
     },
   ];
@@ -1807,15 +1808,15 @@ const GiftSection = () => {
                       </h5>
                       <div className="space-y-2 text-sm text-[#e2d7b1]">
                         <p className="font-medium text-white">Rini Ramadani</p>
-                        <p>Pasa Surau, Pasa Karambia</p>
+                        <p>Jalan lintas Padang Bukittinggi, Simpang Gantiang</p>
                         <p>Nagari Guguak, 2 X 11 Kayu Tanam</p>
-                        <p>Padang Pariaman, Sumatera Barat</p>
-                        <p className="font-mono">📞 0823-xxxx-xxxx</p>
+                        <p>Padang Pariaman, Sumatera Barat. ID 25585</p>
+                        <p className="font-mono">📞 0853-7542-3086</p>
                       </div>
                       <button
                         onClick={() =>
                           copyToClipboard(
-                            "Rini Ramadani\nPasa Surau, Pasa Karambia\nNagari Guguak, 2 X 11 Kayu Tanam\nPadang Pariaman, Sumatera Barat",
+                            "Rini Ramadani\nJalan lintas Padang Bukittinggi, Simpang Gantiang\nNagari Guguak, 2 X 11 Kayu Tanam\nPadang Pariaman, Sumatera Barat",
                             "address1"
                           )
                         }
@@ -1827,7 +1828,7 @@ const GiftSection = () => {
                       </button>
                     </div>
 
-                    <div className="bg-[#2c1810]/30 rounded-lg p-6">
+                    <div className="bg-[#2c1810]/30 rounded-lg p-6 hidden">
                       <h5 className="text-[#e6c8648f] font-medium mb-3">
                         Alamat Mempelai Pria
                       </h5>
