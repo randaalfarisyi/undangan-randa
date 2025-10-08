@@ -1725,7 +1725,7 @@ const GiftSection = () => {
                   {bankAccounts.map((account) => (
                     <div
                       key={account.bank}
-                      className="bg-gradient-to-br from-[#2c1810]/50 to-[#44050083]/50 backdrop-blur-sm rounded-2xl p-6 border border-[#e6c8648f]/20 shadow-2xl"
+                      className="bg-gradient-to-br from-[#2c1810]/50 to-[#44050083]/50 backdrop-blur-sm rounded-2xl p-3 border border-[#e6c8648f]/20 shadow-2xl"
                     >
                       <div className="text-center mb-6">
                         <div className="w-16 h-16 bg-gradient-to-br from-[#e6c86454] to-[#e6c8648f] rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
@@ -1742,7 +1742,7 @@ const GiftSection = () => {
                             Nomor Rekening
                           </p>
                           <div className="flex items-center justify-between">
-                            <p className="text-white text-lg font-mono tracking-wider">
+                            <p className="text-white text-base font-mono tracking-wider">
                               {account.number}
                             </p>
                             <button
@@ -1791,7 +1791,7 @@ const GiftSection = () => {
               )}
 
               {activeTab === "physical" && (
-                <div className="max-w-2xl mx-auto">
+                <div className="max-w-2xl mx-4">
                   <div className="text-center mb-6">
                     <div className="w-16 h-16 bg-gradient-to-br from-[#e6c86454] to-[#e6c8648f] rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                       🏠
