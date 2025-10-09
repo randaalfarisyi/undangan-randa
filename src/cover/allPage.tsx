@@ -382,7 +382,7 @@ const BrideGroomSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid gap-12 items-center">
           {/* Groom */}
           <div
             className={`text-center transition-all duration-1000 delay-200 ${
@@ -414,7 +414,7 @@ const BrideGroomSection = () => {
             </h3>
             <p className="text-[#e2d7b1] mb-4">Putra dari:</p>
             <p className="text-white font-medium">
-              Bapak Syafnel & Ibu Desritta
+              Bapak Syafnel & Ibu Desrita
             </p>
 
             <div className="mt-6 space-y-2 text-sm text-[#e2d7b1] opacity-80">
@@ -422,7 +422,22 @@ const BrideGroomSection = () => {
                 📍 Labuah Lanyah, Jorong Sitapung, Nagari Balai Gurah, Ampek
                 Angkek, Agam, Sumatera Barat
               </p>
-              <p>📧 randaalfarisyi@gmail.com</p>
+              <div className="flex items-center justify-center gap-1">
+                <img
+                  src="/Instagram_icon.png"
+                  alt="Instagram"
+                  width="16"
+                  style={{ verticalAlign: "middle", marginRight: "6px" }}
+                />
+                <a
+                  href="https://instagram.com/randa_alfarisyi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  @randa_alfarisyi
+                </a>
+              </div>
             </div>
           </div>
 
@@ -470,7 +485,23 @@ const BrideGroomSection = () => {
                 📍 Pasa Surau, Pasa Karambia, Nagari Guguak, 2 X 11 Kayu Tanam,
                 Padang Pariaman, Sumatera Barat
               </p>
-              <p>📧 riniramadhani952@gmail.com</p>
+
+              <div className="flex items-center justify-center gap-1">
+                <img
+                  src="/Instagram_icon.png"
+                  alt="Instagram"
+                  width="16"
+                  style={{ verticalAlign: "middle", marginRight: "6px" }}
+                />
+                <a
+                  href="https://instagram.com/rinniramadani"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  @rinniramadani
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -552,7 +583,7 @@ const WishesSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid gap-8">
           {/* Form */}
           <div className="animate-slide-left">
             <form
@@ -974,7 +1005,7 @@ const EventDetailsSection = () => {
         </div>
 
         {/* Event Cards */}
-        <div className="grid sm:grid-cols-2 gap-8">
+        <div className="grid gap-8">
           {/* Akad Nikah */}
           <div className="bg-gradient-to-br from-[#2c1810]/50 to-[#44050083]/50 backdrop-blur-sm rounded-2xl p-8 border border-[#e6c8648f]/20 shadow-2xl animate-slide-left delay-400">
             <div className="text-center">
@@ -992,7 +1023,7 @@ const EventDetailsSection = () => {
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                   <span>⏰</span>
-                  <span>10:00 WIB - Selesai</span>
+                  <span>14:00 WIB - Selesai</span>
                 </div>
                 <div className="flex items-start justify-center space-x-2">
                   <span className="mt-1">📍</span>
@@ -1218,7 +1249,7 @@ const LocationSection = () => {
         </div>
 
         {/* Location Cards */}
-        <div className="grid sm:grid-cols-2 gap-8">
+        <div className="grid gap-8">
           {/* Akad Location */}
           <div className="bg-gradient-to-br from-[#2c1810]/50 to-[#44050083]/50 backdrop-blur-sm rounded-2xl p-8 border border-[#e6c8648f]/20 shadow-2xl animate-slide-left">
             <div className="text-center mb-6">
@@ -1401,7 +1432,7 @@ const RSVPSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid gap-8">
           {/* RSVP Form */}
           <div className="animate-slide-left">
             <form
@@ -1721,7 +1752,7 @@ const GiftSection = () => {
 
               {/* Tab Content */}
               {activeTab === "digital" && (
-                <div className="grid sm:grid-cols-2 gap-6">
+                <div className="grid gap-6">
                   {bankAccounts.map((account) => (
                     <div
                       key={account.bank}
@@ -1801,7 +1832,7 @@ const GiftSection = () => {
                     </h4>
                   </div>
 
-                  <div className="grid sm:grid-cols-2 gap-6">
+                  <div className="grid gap-6">
                     <div className="bg-[#2c1810]/30 rounded-lg p-6">
                       <h5 className="text-[#e6c8648f] font-medium mb-3">
                         Alamat Mempelai Wanita
