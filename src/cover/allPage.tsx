@@ -927,7 +927,7 @@ const EventDetailsSection = () => {
     minutes: 0,
     seconds: 0,
   });
-  const weddingDate = new Date("2025-11-13T10:00:00"); // Ganti dengan tanggal pernikahan
+  const weddingDate = new Date("2025-11-13T14:00:00"); // Ganti dengan tanggal pernikahan
 
   const [sectionRef, isVisible] = useIntersectionObserver();
 
